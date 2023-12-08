@@ -12,7 +12,7 @@ amazon:
   access_key_id: AKIAW62RYER34JW756MD
   secret_access_key: oe6zHPmjeu0D34QVcIy4spTKHNOrx/aEHd4T7jBS
   region: us-east-1
-  bucket: analogcapstonefiles
+  bucket: analogfiles
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:

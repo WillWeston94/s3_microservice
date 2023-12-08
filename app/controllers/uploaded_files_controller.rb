@@ -8,7 +8,7 @@ class UploadedFilesController < ApplicationController
 
         blob = ActiveStorage::Blob.create(filename: file_name)
 
-        obj = s3.bucket('analogcapstonefiles').object(blob.key)
+        obj = s3.bucket('analogfiles').object(blob.key)
         url = obj.presigned_url(:put)
 
         render json: { presigned_url: url, file_name: file_name }, status: 200
